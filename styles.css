@@ -5,16 +5,17 @@ body {
   
   .one {
     background: pink;
-    border: 3px solid blue;
+    border: 2px solid blue;
     /* CHANGE ME */
     padding: 2px;
     margin: 10px;
     text-align: center;
+    
   }
   
   .two {
     background: lightblue;
-    border: 3px solid purple;
+    border: 1.5px solid blue;
     padding: auto;
     margin: auto;
     text-align: center;
@@ -22,7 +23,7 @@ body {
   
   .three {
     background: peachpuff;
-    border: 3px solid brown;
+    border: 2px solid brown;
     width: auto;
     /* CHANGE ME */
     padding: 32px;
@@ -39,7 +40,7 @@ body {
   }
   .five {
     background: peachpuff;
-    border: 3px solid brown;
+    border: 2px solid brown;
     width: auto;
     /* CHANGE ME */
     padding: 2px;
@@ -72,9 +73,10 @@ body {
   }
   
   button {
-    background: #aaddff;
-    border: 1px solid rgb(0, 0, 0);
-    
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
   }
   
   /* SOLUTION */
@@ -109,11 +111,16 @@ body {
   }
   
   button {
-    display: block;
     margin: 0 auto;
     padding: 8px 24px;
   }
 
+  button {
+    transition: transform .3s ease-in-out;
+  }
+  button:hover {
+    transform: scale(1.2)
+  }
    .burger_img {
     background: peachpuff;
     border: none;
@@ -124,7 +131,24 @@ body {
     text-align: center;
     align-content: center;
     align-items: center;
-    align-self: center;
-    
+    align-self: center;}
 
-  }
+    .contentOne {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    input {
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 8px 24px;
+      width: 400px;
+      margin-bottom: 16px;
+    }
+ 
+     
+
+  
